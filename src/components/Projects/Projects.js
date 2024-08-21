@@ -8,6 +8,10 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import gradglide from "../../Assets/Projects/gradglide.png";
+import TermTalk from "../../Assets/Projects/termtalk.png";
+import survey from "../../Assets/Projects/survey.png";
+
 
 function Projects() {
   return (
@@ -21,6 +25,42 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={gradglide}
+              isBlog={false}
+              title="GradGlide | HTML, CSS, React, Node.js, MongoDB"
+              description="Engineered a comprehensive full-stack internship hub specifically designed for university students. GradGlide streamlines the internship application process by providing an intuitive and user-friendly platform that connects students with opportunities tailored to their academic background and career goals. Leveraging modern web technologies, the platform enhances user engagement through a responsive design and dynamic features, resulting in a 25% increase in user interaction.
+
+"
+              ghLink="https://github.com/CLEMENT-ALOYSIUS-2347219/GradGlide"
+              demoLink=""
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={TermTalk}
+              isBlog={false}
+              title="TermTalk AI | LangChain, LLaMA 2, Beautiful Soup, Streamlit"
+              description="Architected an AI-driven platform that demystifies website terms and conditions by offering users clear, natural language explanations. This innovative solution leverages advanced AI models and web scraping techniques to transform complex legal jargon into accessible information, significantly enhancing user trust and transparency. The platform's intuitive interface and accurate interpretations have led to a 30% increase in user confidence and engagement."
+
+
+              ghLink=""
+              demoLink=""
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={survey}
+              isBlog={false}
+              title="Survey Management System | Java, Swing"
+              description="Developed a robust Windows-based application designed to create and manage surveys efficiently. The system automates data collection and analysis, leading to a 40% reduction in manual processing time. With a user-friendly interface, it empowers organizational administrators to streamline survey-related tasks while providing participants with an intuitive experience. This solution enhances survey administration, promotes data-driven decision-making, and simplifies the overall process for both administrators and users."
+
+
+              ghLink="https://github.com/2347253/Survey-Management-System-Swing"
+              demoLink=""
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
